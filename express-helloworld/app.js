@@ -2,8 +2,9 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  const b = Math.random();
-  res.send('You have decided to roll a D20 dice and you got...\n');
+  res.type('text/plain');
+  var randnumber = Math.random();
+  res.send('You have decided to roll a D20 dice and you got...\n'+randnumber);
 
 });
 
