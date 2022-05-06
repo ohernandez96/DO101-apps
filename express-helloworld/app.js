@@ -3,7 +3,7 @@ app = express();
 
 app.get('/', function (req, res) {
   res.type('text/plain');
-  var randnumber = Math.random(1,21);
+  var randnumber = Math.floor(Math.random() * 20) + 1;
   res.send('You have decided to roll a D20 dice and you got...\n'+randnumber);
 
 });
