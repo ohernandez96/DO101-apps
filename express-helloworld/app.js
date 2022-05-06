@@ -3,8 +3,7 @@ app = express();
 
 app.get('/', function (req, res) {
   const b = Math.random();
-  res.send("You have decided to roll a D20 dice and you got...\n",
-  console.log(b));
+  res.send("You have decided to roll a D20 dice and you got...\n",b);
 
 });
 
