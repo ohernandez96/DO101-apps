@@ -4,7 +4,7 @@ app = express();
 app.get('/', function (req, res) {
   res.send('You have decided to roll a d20 dice, and you recieved: ');
   var b = Math.random();
-  res.send('\n',b);
+  res.send(JSON.stringify('\n',b));
 
 });
 
