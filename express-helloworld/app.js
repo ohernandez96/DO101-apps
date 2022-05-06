@@ -10,9 +10,8 @@ app.get('/', function (req, res) {
     var prompt = "Oof, sorry. You failed."
   }
 
-  res.send('You have decided to roll a D20 dice.\n'+
-  'If you get 10 or less, you fail. Otherwise, you pass. And you got a...\n'+randnumber+'!'+
-  '\n'+);
+  res.send('You have decided to roll a D20 dice.\nIf you get 10 or less, you fail. Otherwise, you pass. And you got a...\n'+randnumber+'!'+
+  '\n'+prompt);
 
 });
 
